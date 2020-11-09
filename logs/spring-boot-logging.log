@@ -1,0 +1,7 @@
+2020-10-21 20:09:44.573  INFO 5824 --- [restartedMain] com.projectpmdb.ProjectPmdbApplication   : Starting ProjectPmdbApplication on DESKTOP-O3BKESU with PID 5824 (started by ifran in C:\Users\ifran\Documents\project_pmdb - Copy - Copy)
+2020-10-21 20:09:44.780  INFO 5824 --- [restartedMain] com.projectpmdb.ProjectPmdbApplication   : No active profile set, falling back to default profiles: default
+2020-10-21 20:09:52.351  INFO 5824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 20:09:52.353  INFO 5824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-10-21 20:09:53.429  INFO 5824 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-21 20:09:53.439  INFO 5824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 20:10:02.565  INFO 5824 --- [restartedMain] com.projectpmdb.ProjectPmdbApplication   : Started ProjectPmdbApplication in 20.232 seconds (JVM running for 28.045)

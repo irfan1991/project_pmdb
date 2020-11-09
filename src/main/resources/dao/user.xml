@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.projectpmdb.dao.UserMapper">
+
+    <resultMap id="UserModel" type="com.projectpmdb.model.UserModel">
+        <result property="id" column="user_id" />
+        <result property="active" column="active" />
+        <result property="loginId" column="login_id" />
+        <result property="userName" column="user_name" />
+        <result property="password" column="password" />
+         <result property="createdAt" column="created_at" />
+    </resultMap>
+
+    <select id="findUserByLoginId" resultMap="UserModel">
+        SELECT
+            user_id, active, login_id, user_name, password,created_at
+        FROM
+            user
+
+        <where>
+
+            <if test=" loginId != null and loginId != '' ">
+                AND login_id = #{loginId}
+            </if>
+
+        </where>
+
+    </select>
+
+    <insert id="setUserInfo" parameterType="com.projectpmdb.model.UserModel" useGeneratedKeys="true" keyProperty="param.id">
+        INSERT INTO user
+        (
+            active, login_id, user_name, password, created_at
+        )
+        VALUES
+        (
+            #{param.active}, #{param.loginId}, #{param.userName}, #{param.password}, #{param.createdAt}
+        )
+    </insert>
+
+</mapper>
